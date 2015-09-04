@@ -12,9 +12,10 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 
-# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
+# Don't add secrets
 config/initializers/secret_token.rb
 config/secrets.yml
+config/database.yml
 
 ## Environment normalisation:
 /.bundle
@@ -33,6 +34,3 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
-
-# Don't add actual database config
-database.yml 
