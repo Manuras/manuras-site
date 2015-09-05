@@ -1,0 +1,9 @@
+<% content_for :title do %>
+  <%= content_for?(:public_title) ? yield(:public_title) : "Public" %>
+<% end %>
+<% content_for :content do %>
+  <%= render "partials/header" %>
+  <%= content_for?(:public_content) ? yield(:public_content) : "Placeholder" %>
+  <%= render "partials/footer" %>
+<% end %>
+<%= render template: "layouts/application" %>

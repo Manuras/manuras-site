@@ -1,5 +1,7 @@
-<% content_for :page_content do %> 
-  <h1>User</h1>
-  <% yield %>
+<% content_for :public_title do %>
+  Manuras - Users
 <% end %>
-<%= render template: "layouts/pages" %>
+<% content_for :public_content do %>
+  <%= yield %>
+<% end %>
+<%= render template: "layouts/public" %>

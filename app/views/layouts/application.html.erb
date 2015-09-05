@@ -13,7 +13,6 @@
   </head>
 
   <body>
-    <h1>TEST</h1>
-    <%= yield :content %>
+    <%= content_for?(:content) ? yield(:content) : yield %>
   </body>
 </html>
