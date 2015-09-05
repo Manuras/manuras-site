@@ -17,7 +17,7 @@ set :rbenv_ruby, '2.2.2'
 namespace :deploy do
   task :restart do
     on roles(:app) do
-      
+      execute "touch #{File.join(current_path,'tmp','restart.txt')}"
     end
   end
 end
